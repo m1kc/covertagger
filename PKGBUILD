@@ -17,8 +17,8 @@ md5sums=('d32239bcb673463ab874e80d47fae504'
 build() {
 	cd $srcdir
 	msg2 "Compiling..."
-    make || return 1
-    msg2 "Installing..."
-    mkdir -p $pkgdir/usr/bin
-    cp -v $srcdir/covertagger $pkgdir/usr/bin
+	make || return 1
+	msg2 "Installing..."
+	mkdir -p $pkgdir/usr/bin
+	cp -v $srcdir/covertagger $pkgdir/usr/bin
 }
